@@ -1,3 +1,28 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 h1 {
-  color : red;
+    color: red;
+}
+
+#column-graph {
+    width: 800px;
+    height: 500px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-middle {
+    align-items: center;
+}
+
+.full-height-vh {
+    height: 100vh;
 }
