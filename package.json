@@ -6,7 +6,9 @@
     "scripts": {
         "start": "webpack-dev-server --hot --inline",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "webpack --config ./webpack.prod.config.js --progress --colors"
+        "build": "webpack --config ./webpack.prod.config.js --progress --colors",
+        "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
+        "postinstall": "webpack -p --config ./webpack.prod.config.js --progress"
     },
     "author": "",
     "license": "ISC",
