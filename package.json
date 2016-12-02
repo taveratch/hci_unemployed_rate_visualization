@@ -9,8 +9,8 @@
     "scripts": {
         "start": "webpack-dev-server --hot --inline",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "webpack --config ./webpack.prod.config.js --progress --colors",
-        "postinstall": "NODE_ENV=production webpack -p"
+        "build": "./node_modules/webpack/bin/webpack --config ./webpack.prod.config.js --progress --colors",
+        "postinstall": "NODE_ENV=production ./node_modules/webpack/bin/webpack -p"
     },
     "author": "",
     "license": "ISC",
